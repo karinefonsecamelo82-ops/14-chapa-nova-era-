@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Chapa 14 Nova Era — Sua voz, nossa ação! Juntos por uma escola melhor.">
+<title>Chapa 14 | Nova Era 🐆</title>
+<style>
+:root{--black:#090909;--panel:#141414;--yellow:#ffc928;--white:#f8f7f2;--muted:#bcbab4;--line:#393731}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1120px,91%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#090909ed;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff20}.nav{height:76px;display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:1000;letter-spacing:.05em}.paw{font-size:30px;color:var(--yellow)}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:.18em}.links{display:flex;gap:22px}.links a{text-decoration:none;font-weight:800;font-size:13px;text-transform:uppercase}.links a:hover{color:var(--yellow)}.menu{display:none;background:var(--yellow);color:#111;border:0;border-radius:8px;padding:9px 12px;font-weight:900}
+.hero{position:relative;overflow:hidden;padding:84px 0 74px;background:radial-gradient(ellipse at 85% 70%,#5d3a00 0%,transparent 34%),linear-gradient(130deg,#090909,#171510 65%,#090909)}.hero:before,.hero:after{content:"";position:absolute;width:42%;height:7px;background:var(--yellow);transform:rotate(-27deg);opacity:.9}.hero:before{top:55px;left:-100px}.hero:after{right:-120px;bottom:75px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;position:relative;z-index:1}.eyebrow{color:var(--yellow);font-size:13px;letter-spacing:.22em;font-weight:1000;text-transform:uppercase}.hero h1{font-size:clamp(3.8rem,10vw,8rem);line-height:.82;letter-spacing:-.075em;margin:20px 0;text-transform:uppercase;font-weight:1000;font-style:italic}.hero h1 span{color:var(--yellow);display:block}.number{font-size:clamp(5rem,13vw,10rem);line-height:.9;color:var(--yellow);font-weight:1000;font-style:italic;letter-spacing:-.08em;text-shadow:5px 5px 0 #6c4b00}.slogan{font-weight:1000;font-size:clamp(1.15rem,3vw,1.7rem);text-transform:uppercase;line-height:1.25;max-width:430px}.slogan em{color:var(--yellow);font-style:normal}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-block;padding:13px 18px;border-radius:5px;text-decoration:none;text-transform:uppercase;letter-spacing:.04em;font-size:12px;font-weight:1000;border:2px solid var(--yellow)}.btn.primary{background:var(--yellow);color:#111}.btn.secondary{color:var(--white)}.mascot{min-height:350px;display:grid;place-items:center;position:relative}.mascot .circle{width:min(370px,75vw);aspect-ratio:1;border:2px solid #ffc92880;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#392b0d 0%,#17140d 55%,#090909 72%);box-shadow:0 0 70px #ffc92815,inset 0 0 55px #ffc92812}.jaguar{font-size:clamp(9rem,23vw,17rem);filter:grayscale(1) sepia(1) saturate(4) hue-rotate(355deg);line-height:1}.pawprint{position:absolute;color:var(--yellow);font-size:65px;left:0;bottom:5%;transform:rotate(-25deg)}.slash{position:absolute;color:var(--yellow);font-size:60px;right:0;top:3%;font-weight:1000;transform:rotate(20deg)}
+.strip{background:var(--yellow);color:#101010;padding:12px 0;font-weight:1000;text-transform:uppercase;letter-spacing:.13em;font-size:12px;overflow:hidden;text-align:center}
+section{padding:76px 0}.section-title{text-align:center;margin:0 auto 34px;max-width:720px}.kicker{font-size:11px;font-weight:1000;letter-spacing:.24em;color:var(--yellow);text-transform:uppercase}.section-title h2{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1;letter-spacing:-.05em;text-transform:uppercase;font-style:italic;margin:10px 0}.section-title p{color:var(--muted);margin:12px 0 0}.proposals{background:#101010}.proposal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#1a1a1a,#101010);border:1px solid var(--line);padding:23px;border-radius:8px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;width:55px;height:4px;background:var(--yellow)}.card .icon{font-size:32px}.card h3{margin:12px 0 7px;text-transform:uppercase;font-size:17px}.card p{color:var(--muted);font-size:14px;margin:0}.members-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.member{display:flex;align-items:center;gap:13px;background:#131313;border:1px solid var(--line);padding:15px;border-radius:7px}.avatar{flex:0 0 44px;height:44px;display:grid;place-items:center;background:var(--yellow);color:#111;font-weight:1000;font-size:18px;border-radius:3px;font-style:italic}.member h3{font-size:14px;margin:0;line-height:1.3}.member p{margin:4px 0 0;color:var(--yellow);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.note{color:var(--muted);font-size:12px;text-align:center;margin-top:20px}
+.callout{background:var(--yellow);color:#101010;padding:54px 0}.callout-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.callout h2{font-size:clamp(2rem,5vw,3.8rem);line-height:.98;text-transform:uppercase;font-style:italic;margin:0;letter-spacing:-.04em}.callout p{max-width:450px;font-weight:700}.callout .btn{border-color:#111;color:#111}.contact{text-align:center}.contact .btn{margin-top:12px}.contact p{color:var(--muted);max-width:620px;margin:0 auto}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.foot strong{color:var(--yellow)}
+
+.suggestion-form{max-width:760px;margin:0 auto;text-align:left;background:#131313;border:1px solid #51472b;border-radius:10px;padding:clamp(18px,4vw,32px);box-shadow:0 18px 50px #0006}
+.suggestion-form label{display:block;color:var(--white);font-weight:800;font-size:13px;margin-bottom:17px}
+.suggestion-form input,.suggestion-form textarea{display:block;width:100%;margin-top:7px;background:#090909;border:1px solid #51472b;border-radius:5px;padding:13px;color:#fff;font:inherit;outline:none}
+.suggestion-form input:focus,.suggestion-form textarea:focus{border-color:var(--yellow);box-shadow:0 0 0 2px #ffc92825}
+.suggestion-form textarea{resize:vertical;min-height:125px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.form-privacy,.form-note{font-size:12px;color:var(--muted);line-height:1.5}
+.form-note{margin-bottom:0}
+.suggestion-form button{cursor:pointer}
+
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero{padding:60px 0}.mascot{min-height:260px}.mascot .circle{width:250px}.jaguar{font-size:11rem}.proposal-grid,.members-grid{grid-template-columns:1fr 1fr}.links{display:none;position:absolute;top:76px;left:0;right:0;padding:20px 5%;background:#111;flex-direction:column}.links.open{display:flex}.menu{display:block}.callout-inner{align-items:flex-start;flex-direction:column}.hero h1{font-size:clamp(3.5rem,17vw,6rem)}}
+@media(max-width:440px){.proposal-grid,.members-grid{grid-template-columns:1fr}.number{font-size:7rem}.brand{font-size:13px}}
+</style></head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#inicio"><span class="paw">🐾</span><span>CHAPA 14 · NOVA ERA<small>SUA VOZ. NOSSA AÇÃO.</small></span></a><button class="menu" id="menu">MENU ☰</button><nav class="links" id="links"><a href="#inicio">Início</a><a href="#propostas">Propostas</a><a href="#integrantes">Integrantes</a><a href="#contato">Contato</a></nav></div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="eyebrow">★ Grêmio estudantil · Chapa</div><h1>Nova <span>Era</span></h1><div class="number">14</div><p class="slogan">Sua voz.<br><em>Nossa ação!</em><br>Juntos por uma escola melhor.</p><div class="hero-actions"><a class="btn primary" href="#propostas">Conheça as propostas ↓</a><a class="btn secondary" href="#integrantes">Nossa equipe</a></div></div><div class="mascot" aria-label="Símbolo da onça-pintada"><span class="slash">✳</span><div class="circle"><span class="jaguar">🐆</span></div><span class="pawprint">🐾</span></div></div></section>
+<div class="strip">CHAPA 14 · NOVA ERA · PARTICIPAÇÃO · RESPEITO · ATITUDE · CHAPA 14 · NOVA ERA</div>
+<section class="proposals" id="propostas"><div class="wrap"><div class="section-title"><span class="kicker">Nosso compromisso</span><h2>Propostas que fazem a diferença</h2><p>Ideias para dar voz aos estudantes, movimentar a escola e criar memórias juntos. Vamos construir essa Nova Era!</p></div><div class="proposal-grid">
+<article class="card"><div class="icon">📣</div><h3>Voz do aluno</h3><p>Mais participação dos estudantes, reuniões com os alunos e ideias que viram ação.</p></article>
+<article class="card"><div class="icon">🎨</div><h3>Cultura</h3><p>Festival de talentos, oficinas de arte, cinema na escola e recreio com música.</p></article>
+<article class="card"><div class="icon">🏆</div><h3>Esporte</h3><p>Mais campeonatos, interclasses com tema de tabela do Paulistão, mais materiais esportivos e melhorias na quadra.</p></article>
+<article class="card"><div class="icon">🎭</div><h3>Talento</h3><p>Palco aberto, espaço para mostrar seu talento e eventos feitos para os alunos.</p></article>
+<article class="card"><div class="icon">💡</div><h3>Ideias dos alunos</h3><p>Caixa de sugestões, mural dos alunos e projetos criados pelos próprios estudantes.</p></article>
+<article class="card"><div class="icon">📸</div><h3>Memórias</h3><p>Fotos das turmas, registros de eventos especiais e lembranças da nossa escola.</p></article>
+<article class="card"><div class="icon">🤝</div><h3>União</h3><p>Incentivar o aluno a ajudar aluno, integrar as turmas e construir uma escola para todos.</p></article>
+<article class="card"><div class="icon">🌱</div><h3>Ambiente</h3><p>Mais lixeiras, cuidado com as áreas verdes e ações para manter a escola mais limpa.</p></article>
+<article class="card"><div class="icon">❤️</div><h3>Ação social</h3><p>Campanhas de doação e ações comunitárias para ajudar quem precisa.</p></article>
+<article class="card"><div class="icon">🎉</div><h3>Eventos e dias temáticos</h3><p>Gincanas, festas, campeonatos e atividades diferentes para animar o calendário escolar.</p></article>
+<article class="card"><div class="icon">🎮</div><h3>Momentos de lazer</h3><p>Atividades recreativas nos intervalos e eventos especiais para aproveitar juntos.</p></article>
+<article class="card"><div class="icon">🚌</div><h3>Passeios para as salas</h3><p>Propor passeios e experiências educativas para as turmas, conforme a organização e autorização da escola.</p></article>
+</div></div></section>
+<section id="integrantes"><div class="wrap"><div class="section-title"><span class="kicker">Quem está com a gente</span><h2>Equipe Nova Era</h2><p>Conheça os integrantes da Chapa 14.</p></div><div class="members-grid">
+<div class="member"><div class="avatar">K</div><div><h3>Karine</h3><p>2º C</p></div></div>
+<div class="member"><div class="avatar">K</div><div><h3>Kamilly</h3><p>2º C</p></div></div>
+<div class="member"><div class="avatar">M</div><div><h3>Maria Eduarda Soares</h3><p>2º C</p></div></div>
+<div class="member"><div class="avatar">M</div><div><h3>Maria Eduarda Leonel</h3><p>2º C</p></div></div>
+<div class="member"><div class="avatar">G</div><div><h3>Gabrielle</h3><p>2º C</p></div></div>
+<div class="member"><div class="avatar">G</div><div><h3>Guilherme Pietro</h3><p>2º A</p></div></div>
+<div class="member"><div class="avatar">I</div><div><h3>Isabelly</h3><p>1º B</p></div></div>
+<div class="member"><div class="avatar">M</div><div><h3>Maria Alice</h3><p>8º B</p></div></div>
+<div class="member"><div class="avatar">L</div><div><h3>Luccas Gabriel</h3><p>8º B</p></div></div>
+</div><p class="note">Confira a grafia dos nomes e das turmas antes de divulgar.</p></div></section>
+<section class="callout"><div class="wrap callout-inner"><div><h2>Uma nova era<br>começa com você!</h2><p>“Ideias que viram realidade!” · “Mais participação, mais conquistas!” · “O aluno também decide!” · “Nossa escola, nossas ideias!”</p></div><a class="btn" href="#contato">Vamos conversar ↗</a></div></section>
+<section class="contact" id="contato"><div class="wrap"><div class="section-title"><span class="kicker">Sua ideia importa</span><h2>Caixa de sugestões</h2><p>Tem uma ideia para melhorar nossa escola? Envie sua sugestão para a Chapa 14 — Nova Era. Você pode deixar seu nome em branco.</p></div>
+<form class="suggestion-form" action="https://formsubmit.co/karinefonsecamelo82@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nova sugestão — Chapa 14 Nova Era">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="">
+<div class="form-grid">
+<label>Seu nome (opcional)<input type="text" name="Nome" maxlength="80" placeholder="Se quiser se identificar"></label>
+<label>Sua turma (opcional)<input type="text" name="Turma" maxlength="30" placeholder="Ex.: 2º C"></label>
+</div>
+<label>Sua sugestão<textarea name="Sugestão" required minlength="5" maxlength="3000" rows="5" placeholder="Conte sua ideia para melhorar a escola..." ></textarea></label>
+<p class="form-privacy">Não inclua senhas, telefones pessoais ou informações particulares de outras pessoas. As mensagens serão enviadas ao e-mail responsável pelo grêmio.</p>
+<button class="btn primary" type="submit">Enviar sugestão ↗</button>
+<p class="form-note">No primeiro envio, o serviço de formulário poderá pedir uma confirmação por e-mail para ativar o recebimento.</p>
+</form>
+</div></section>
+</main><footer><div class="wrap foot"><span><strong>🐆 CHAPA 14 · NOVA ERA</strong> — Sua voz. Nossa ação!</span><span>Juntos por uma escola melhor.</span></div></footer>
+<script>const m=document.getElementById('menu'),n=document.getElementById('links');m.addEventListener('click',()=>n.classList.toggle('open'));n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')));</script>
+</body></html>
